@@ -1,0 +1,47 @@
+{% extends "base_menu.html" %}
+
+{% block title %} 
+Bienvenidos a {{ name_rest }} 
+{% endblock %}
+
+{% block content %}
+<h2>Bienvenidos a {{ name_rest }}</h2>
+
+
+<form action="" method="post" novalidate>
+   
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.id.label }}
+        {{ form.id(size=64) }}<br>
+        {% for error in form.id.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.Ubicacion.label }}
+        {{ form.Ubicacion(size=64) }}<br>
+        {% for error in form.Ubicacion.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.Comensales_Maximo.label }}
+        {{ form.Comensales_Maximo(size=64) }}<br>
+        {% for error in form.Comensales_Maximo.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{form.Tipo_Silla.label}}
+        {{form.Tipo_Silla}}<br>
+        {% for error in form.Tipo_Silla.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{form.submit() }}
+    </div>
+    </form>
+
+{% endblock %}}
