@@ -16,3 +16,4 @@ Quedan pendiente integrar los demas análisis realizados en la maestría.
   que ordenan del menu, etc.) para realizar distintos analisis. (predecir tiempo de ocupacion de una mesa, correlacion entre distinto platos del menu, analisis de platos mas 
   rentables y por que, etc.)
 
+3) Find_outliers: Pequeño analisis realizado donde se pedia encontrar los outliers de un dataset. 
